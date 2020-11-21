@@ -1,0 +1,83 @@
+package com.cg.eis.exercise2.bean;
+
+/**
+ * @author Komal Patil
+ * The Class Employee.
+ */
+
+public class Employee {
+	
+	private Integer id;
+	private String name;
+	private Double salary;
+	private Designation designation;
+	private String insuranceScheme;
+	
+	public Employee()
+	{
+		
+	}
+
+	/**
+	 * Instantiates a new employee.
+	 *
+	 * @param id the id
+	 * @param name the name
+	 * @param salary the salary
+	 * @param insuranceScheme the insurance scheme
+	 */
+	public Employee(Integer id, String name, Double salary,  String insuranceScheme) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+		
+		this.insuranceScheme = insuranceScheme;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+
+	public Designation getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(Designation string) {
+		this.designation = string;
+	}
+
+	public String getInsuranceScheme() {
+		return insuranceScheme;
+	}
+
+	public void setInsuranceScheme(String insuranceScheme) {
+		this.insuranceScheme = insuranceScheme;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", designation=" + designation
+				+ ", insuranceScheme=" + insuranceScheme + "]";
+	}
+}
