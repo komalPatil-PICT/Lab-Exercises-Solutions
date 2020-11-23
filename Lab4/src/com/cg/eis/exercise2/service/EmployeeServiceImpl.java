@@ -81,7 +81,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 			scheme = "Scheme B";
 		else if(desig.equals(Designation.MANAGER) && (salary >= 40000))
 			scheme = "Scheme A";
-		else if(desig.equals(Designation.PROGRAMMER) && (salary < 5000))
+		else if(desig.equals(Designation.CLERK) && (salary < 5000))
 			scheme = "No Scheme";
 		
 		emp.setInsuranceScheme(scheme);
